@@ -1,0 +1,222 @@
+body {
+    background-color: #181A1B;
+}
+
+h1, h2, h3, span {
+    color: #bfbfbf;
+    font-family: Arial;
+}
+
+p {
+    color: #bfbfbf;
+    font-family: Arial;
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    color: #bfbfbf;
+    font-family: Arial;
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+
+span, a {
+    color: #dbdbdb;
+    font-family: Arial;
+}
+
+.intro {
+    height: 100vh;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.introcontainer {
+    height: 40%;
+    padding: 30vh 230px 0 230px;
+}
+
+.centeredcontainer {
+    padding: 5vh 230px;
+}
+
+.projecttextcontainer {
+    width: 80%;
+    max-width: 960px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.projecttextcontainer > div {
+    flex: 1;
+}
+
+.introtext {
+    width: 50vw;
+    max-width: 960px;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.profilepic {
+    width:12.5vw;
+    height:auto;
+    border-radius:50%;
+    max-width: 240px;
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.projectpic {
+    width: 100%;
+    height:auto;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+}
+
+.sectionhead {
+    width: 100%;
+    max-width: 1920px;
+    height: 18px;
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.projecttitle {
+    width: 90%;
+    max-width: 1065px;
+    height: 18px;
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.custombold {
+    color: #dbdbdb;
+    font-weight: bold;
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: calc(100% - 20px);
+    height: 1px;
+    background-color: #0047AB;
+    opacity: 0;
+    transition: opacity 200ms, transform 200ms;
+}
+
+.link:hover::after {
+    opacity: 1;
+    transform: translate3d(0, 2px, 0);
+}
+
+.linkarrow {
+    transition: transform .2s;
+}
+
+.link:hover .linkarrow {
+    transform: translate(3px ,0);
+}
+
+.textlink {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.textlink::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #0047AB;
+    opacity: 0;
+    transition: opacity 200ms, transform 200ms;
+}
+
+.textlink:hover::after {
+    opacity: 1;
+    transform: translate3d(0, 2px, 0);
+}
+
+.tooltip {
+    position: relative;
+    float: right;
+    display: block;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 75%;
+    background-color: #2f3336;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: calc(12.5% - 5px);
+    opacity: 0;
+    transition: opacity 200ms;
+    border: 2px solid;
+    border-color: #0047AB;
+    font-size: 0.75em;
+  }
+  
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0047AB transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.headerlinks {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 1% 2%;
+    transition: all .2s ease-in;
+}
+
+.headerlinks:hover {
+    background-color: #00214e;
+}
